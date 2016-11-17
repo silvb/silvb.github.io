@@ -35,7 +35,7 @@ li {
 
 .header {
     max-width: 100%;
-    padding: 10% 20%;
+    padding: 25% 20%;
 
     background: mediumspringgreen;
 }
@@ -55,9 +55,6 @@ li {
 .icon {
     width: 20px;
     font-size: 20px!important;
-}
-
-li > .icon {
     padding-right: 10px;
 }
 
@@ -67,7 +64,7 @@ li > .icon {
 }
 
 .main {
-    padding: 6% 0 10% 10%;
+    padding: 10% 10% 10% 25%;
     font-size: 18px;
     flex: 1 1 100%;
 }
@@ -87,6 +84,7 @@ a {
     text-decoration: none;
     color: darkslategray;
     border-bottom: 2px solid mediumorchid;
+    white-space: nowrap;
 }
 
 .footer > a {
@@ -104,4 +102,27 @@ a {
 
 .footer > a:hover > .fa {
     color: mediumorchid;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    body {
+        font-size: 36px;
+    }
+    
+    .header {
+        padding: 15% 10%;
+    }
+    
+    .main {
+        font-size: 36px;
+        padding: 10%;
+    }
+    
+    .icon {
+        font-size: 36px!important;
+        width: 36px;
+        padding-right: 30px;
+    }
 }
