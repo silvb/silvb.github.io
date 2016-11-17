@@ -1,18 +1,31 @@
 html {
     -webkit-font-smoothing: antialiased;
+    // height: 100vh;
 }
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 ul {
     list-style: none;
+    padding: 8px 0 8px 40px;
+    
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 li {
     padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
 }
 
 .fa {
@@ -21,19 +34,20 @@ li {
 
 .header {
     max-width: 100%;
-    padding: 20%;
+    padding: 10% 20%;
 
     background: mediumspringgreen;
     color: black;
 }
 
 .header > h1 {
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 2.5em;
     margin: 0 0 10px 0;
 }
 
 .header > h2 {
-    font-weight: 100;
+    font-weight: 300;
     position: relative;
     margin: 0;
 
@@ -41,24 +55,33 @@ li {
 }
 
 .icon {
-    margin-right: 8px;
     width: 20px;
     font-size: 20px!important;
 }
 
+li > .icon {
+    padding-right: 10px;
+}
+
+.highlight {
+    color: mediumorchid;
+    font-weight: 400;
+}
+
 .main {
-    padding: 6% 0 10% 25%;
+    padding: 6% 0 10% 10%;
     color: darkslategray;
     font-size: 18px;
-    height: 60vh;
+    flex: 1 0 auto;
 }
 
 .footer {
     display: flex;
+    flex: 1 0 auto;
     align-items: center;
     justify-content: space-around;
 
-    padding: 2% 40%;
+    padding: 10px 30%;
 
     background: mediumspringgreen;
 }
@@ -66,7 +89,6 @@ li {
 a {
     text-decoration: none;
     color: darkslategray;
-    padding: 2px 0;
     border-bottom: 2px solid mediumorchid;
 }
 
@@ -77,7 +99,7 @@ a {
 
 .footer > a > .fa {
     color: darkslategray;
-    font-size: 20px;
+    font-size: 2em;
 }
 
 .footer > a:hover > .fa {
