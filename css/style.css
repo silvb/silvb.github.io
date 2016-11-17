@@ -5,7 +5,8 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: darkslategray;
 }
 
 ul {
@@ -37,7 +38,6 @@ li {
     padding: 10% 20%;
 
     background: mediumspringgreen;
-    color: black;
 }
 
 .header > h1 {
@@ -50,8 +50,6 @@ li {
     font-weight: 300;
     position: relative;
     margin: 0;
-
-    color: darkslategray;
 }
 
 .icon {
@@ -65,12 +63,11 @@ li > .icon {
 
 .highlight {
     color: mediumorchid;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .main {
     padding: 6% 0 10% 10%;
-    color: darkslategray;
     font-size: 18px;
     flex: 1 1 100%;
 }
@@ -100,6 +97,9 @@ a {
 .footer > a > .fa {
     color: darkslategray;
     font-size: 2em;
+    
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;;
 }
 
 .footer > a:hover > .fa {
