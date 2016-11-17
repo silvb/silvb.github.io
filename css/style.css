@@ -1,0 +1,85 @@
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 8px 0;
+}
+
+.fa {
+    color: mediumorchid;
+}
+
+.header {
+    max-width: 100%;
+    padding: 20%;
+
+    background: mediumspringgreen;
+    color: black;
+}
+
+.header > h1 {
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.header > h2 {
+    font-weight: 100;
+    position: relative;
+    margin: 0;
+
+    color: darkslategray;
+}
+
+.icon {
+    margin-right: 8px;
+    width: 20px;
+    font-size: 20px!important;
+}
+
+.main {
+    padding: 6% 0 10% 25%;
+    color: darkslategray;
+    font-size: 18px;
+    height: 60vh;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 2% 40%;
+
+    background: mediumspringgreen;
+}
+
+a {
+    text-decoration: none;
+    color: darkslategray;
+    padding: 2px 0;
+    border-bottom: 2px solid mediumorchid;
+}
+
+.footer > a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.footer > a > .fa {
+    color: darkslategray;
+    font-size: 20px;
+}
+
+.footer > a:hover > .fa {
+    color: mediumorchid;
+}
