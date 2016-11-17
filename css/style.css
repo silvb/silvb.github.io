@@ -72,7 +72,7 @@ li > .icon {
     padding: 6% 0 10% 10%;
     color: darkslategray;
     font-size: 18px;
-    flex: 1 0 auto;
+    flex: 1 1 100%;
 }
 
 .footer {
