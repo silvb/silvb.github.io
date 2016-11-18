@@ -6,7 +6,7 @@ html {
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    color: darkslategray;
+    color: slategray;
 }
 
 ul {
@@ -29,13 +29,9 @@ li {
     height: 100vh;
 }
 
-.fa {
-    color: mediumorchid;
-}
-
 .header {
     max-width: 100%;
-    padding: 25% 20%;
+    padding: 15% 10%;
 
     background: mediumspringgreen;
 }
@@ -53,8 +49,8 @@ li {
 }
 
 .icon {
-    width: 20px;
-    font-size: 20px!important;
+    width: 32px;
+    font-size: 32px!important;
     padding-right: 10px;
 }
 
@@ -107,21 +103,25 @@ a {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
     body {
-        font-size: 36px;
+        font-size: 42px;
     }
     
-    .header {
-        padding: 15% 10%;
+    h1 {
+        font-size: 2em!important;
+    }
+    
+    h2 {
+        font-size: 1.2em!important;
     }
     
     .main {
-        font-size: 36px;
+        font-size: 42px;
         padding: 10%;
     }
     
     .icon {
-        font-size: 36px!important;
-        width: 36px;
-        padding-right: 30px;
+        font-size: 48px!important;
+        width: 48px;
+        padding-right: 42px;
     }
 }
