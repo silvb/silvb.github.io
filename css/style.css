@@ -1,12 +1,14 @@
 html {
     -webkit-font-smoothing: antialiased;
-    // height: 100vh;
+    font-size: 12px;
 }
 
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
     color: slategray;
+    min-height: 100vh;
+    width: 100%;
 }
 
 ul {
@@ -33,19 +35,31 @@ li {
     max-width: 100%;
     padding: 15% 10%;
 
-    background: mediumspringgreen;
+    background: #272822;
 }
 
 .header > h1 {
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 3rem;
     margin: 0 0 10px 0;
 }
 
 .header > h2 {
     font-weight: 400;
+    font-size: 2rem;
+    line-height: 2rem;
+    height: 29px;
+}
+
+.caret {
+    display: inline-block;
+    height: 3.5rem;
+    width: 5px;
     position: relative;
-    margin: 0;
+    left: -10px;
+    bottom: -3px;
+    background: #ECD018;
+    transition: all 0.4s ease-in-out;
 }
 
 .icon {
@@ -55,13 +69,15 @@ li {
 }
 
 .highlight {
-    color: mediumorchid;
+    color: #F92672;
 }
 
 .main {
-    padding: 10% 10% 10% 25%;
-    font-size: 18px;
+    padding: 10rem;
+    font-size: 1.8rem;
     flex: 1 1 100%;
+    background: black;
+
 }
 
 .footer {
@@ -72,14 +88,21 @@ li {
 
     padding: 10px 30%;
 
-    background: mediumspringgreen;
+    background: #272822;
 }
 
 a {
     text-decoration: none;
     color: darkslategray;
-    border-bottom: 2px solid mediumorchid;
+    border-bottom: 2px solid #F92672;
     white-space: nowrap;
+    
+    -webkit-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+.main a:hover {
+    color: #66D9EF;
 }
 
 .footer > a {
@@ -89,16 +112,17 @@ a {
 
 .footer > a > .fa {
     color: darkslategray;
-    font-size: 2em;
+    font-size: 3rem;
     
     -webkit-transition: all 0.3s ease;
             transition: all 0.3s ease;
 }
 
 .footer > a:hover > .fa {
-    color: mediumorchid;
+    color: #F92672;
 }
 
+/*
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
@@ -116,12 +140,21 @@ and (max-device-width : 480px) {
     
     .main {
         font-size: 42px;
-        padding: 10%;
     }
     
     .icon {
         font-size: 48px!important;
         width: 48px;
         padding-right: 42px;
+    }
+}
+
+*/
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    html {
+        font-size: 20px;
     }
 }

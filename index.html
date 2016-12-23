@@ -17,7 +17,8 @@
             <div class="header">
 
                 <h1>
-                    Hi, I'm Silvio Bauer.
+                    <span>Hi, I'm Silvio Bauer</span>
+                    <div class="caret"></div>
                 </h1>
                 <h2>
                     I'm a <span class="highlight">frontend engineer</span> living in Hamburg, Germany.
@@ -50,6 +51,17 @@
                     </li>
                 </ul>
 
+
+                Projects: 
+                <ul>
+                    <li>
+                        <span>
+                            <a target="_blank" href="https://silvb.github.io/js30-clock">CSS + JS Clock</a> :
+                            <span class="description">Inspired by Wes Bos' tutorial from his <a href="https://javascript30.com/">#Javascript30</a> series</span>
+                        </span>
+                    </li>
+                </ul>
+
                 If you want to get into the nitty-gritty details, email me at <a target="_blank" href="mailto:mail@silviobauer.de">mail<i class="fa fa-at"></i>silviobauer.de</a>.
 
             </div>
@@ -69,6 +81,13 @@
                 </a>
             </div>
         </div>
+        
+        <script>
+            const caret = document.querySelector('.caret');
+            setInterval(() => {
+                caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
+            }, 800);
+        </script>
 
     </body>
 </html>
