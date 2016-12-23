@@ -35,7 +35,7 @@ li {
     max-width: 100%;
     padding: 15% 10%;
 
-    background: #272822;
+    background: #1d1d1d;
 }
 
 .header > h1 {
@@ -76,7 +76,7 @@ li {
     padding: 10rem;
     font-size: 1.8rem;
     flex: 1 1 100%;
-    background: black;
+    background: #000108;
 
 }
 
@@ -88,7 +88,7 @@ li {
 
     padding: 1rem 10rem;
 
-    background: #272822;
+    background: #1d1d1d;
 }
 
 a {
