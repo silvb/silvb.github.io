@@ -53,8 +53,8 @@ li {
 
 .caret {
     display: inline-block;
-    height: 3.5rem;
-    width: 5px;
+    height: 3rem;
+    width: 4px;
     position: relative;
     left: -10px;
     bottom: -3px;
