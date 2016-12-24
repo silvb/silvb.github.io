@@ -15,19 +15,38 @@ ul {
     list-style: none;
     padding: 8px 0 8px 40px;
     
+    display: -webkit-box;
+    
+    display: -webkit-flex;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
 }
 
 li {
     padding: 8px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     height: 100vh;
 }
 
@@ -35,7 +54,7 @@ li {
     max-width: 100%;
     padding: 15% 10%;
 
-    background: #1d1d1d;
+    background: #1D1D1D;
 }
 
 .header > h1 {
@@ -59,6 +78,7 @@ li {
     left: -10px;
     bottom: -3px;
     background: #ECD018;
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
@@ -75,20 +95,34 @@ li {
 .main {
     padding: 10rem;
     font-size: 1.8rem;
-    flex: 1 1 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     background: #000108;
 
 }
 
 .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex: 1 0 auto;
-    align-items: center;
-    justify-content: space-around;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
 
     padding: 1rem 10rem;
 
-    background: #1d1d1d;
+    background: #1D1D1D;
 }
 
 a {
