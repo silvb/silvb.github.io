@@ -1,93 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Silvio Bauer - Frontend Engineer</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Silvio Bauer - Frontend Engineer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400%7CSource+Sans+Pro:200,400" type="text/css">
+</head>
+<body>
 
-        <link rel="stylesheet" href="css/style.css">
+<div class="container">
+    <div class="header">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <h1>
+            <span>Hi, I'm Silvio Bauer</span>
+            <div class="caret"></div>
+        </h1>
+        <h2>
+            I'm a <span class="highlight">frontend engineer</span> living in Hamburg, Germany.
+        </h2>
+
+    </div>
+
+    <div class="main">
+       
+        Here's what I like:
+
+        <ul>
+            <li>
+                <i class="fa fa-code icon highlight"></i>
+                <span>
+                    Coding with JavaScript, currently at <a target="_blank" href="http://minubo.com/">minubo</a>
+                </span>
+            </li>
+            <li>
+                <span class="icon">💪</span>
+                <span>
+                    Strength training, which I blog about at <a target="_blank" href="http://neatstrength.com/">neatstrength.com</a>
+                </span>
+            </li>
+            <li>
+                <span class="icon">🎸</span>
+                <span>
+                    Playing music, which I did with my band <a target="_blank" href="http://lettersfromdave.de/">lettersfromdave.de</a>
+                </span>
+            </li>
+        </ul>
+
+
+        Projects:
         
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400%7CSource+Sans+Pro:200,400" type="text/css">
+        <ul>
+            <li>
+                <span>
+                    <a target="_blank" href="https://silvb.github.io/js30-clock">CSS + JS Clock</a> :
+                    <span class="description">Inspired by Wes Bos' tutorial from his <a target="_blank" href="https://javascript30.com/">#Javascript30</a> series</span>
+                </span>
+            </li>
+        </ul>
 
-    </head>
+        If you want to get into the nitty-gritty details, email me at <a target="_blank" href="mailto:mail@silviobauer.de">mail<i class="fa fa-at"></i>silviobauer.de</a>.
 
-    <body>
-        <div class="container">
-            <div class="header">
+    </div>
 
-                <h1>
-                    <span>Hi, I'm Silvio Bauer</span>
-                    <div class="caret"></div>
-                </h1>
-                <h2>
-                    I'm a <span class="highlight">frontend engineer</span> living in Hamburg, Germany.
-                </h2>
-
-            </div>
-
-            <div class="main">
-               
-                Here's what I like:
-
-                <ul>
-                    <li>
-                        <i class="fa fa-code icon highlight"></i>
-                        <span>
-                            Coding with JavaScript, currently at <a target="_blank" href="http://minubo.com/">minubo</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="icon">💪</span>
-                        <span>
-                            Strength training, which I blog about at <a target="_blank" href="http://neatstrength.com/">neatstrength.com</a>
-                        </span>
-                    </li>
-                    <li>
-                        <span class="icon">🎸</span>
-                        <span>
-                            Playing music, which I did with my band <a target="_blank" href="http://lettersfromdave.de/">lettersfromdave.de</a>
-                        </span>
-                    </li>
-                </ul>
-
-
-                Projects: 
-                <ul>
-                    <li>
-                        <span>
-                            <a target="_blank" href="https://silvb.github.io/js30-clock">CSS + JS Clock</a> :
-                            <span class="description">Inspired by Wes Bos' tutorial from his <a target="_blank" href="https://javascript30.com/">#Javascript30</a> series</span>
-                        </span>
-                    </li>
-                </ul>
-
-                If you want to get into the nitty-gritty details, email me at <a target="_blank" href="mailto:mail@silviobauer.de">mail<i class="fa fa-at"></i>silviobauer.de</a>.
-
-            </div>
-
-            <div class="footer">
-                <a target="_blank" href="https://www.xing.com/profile/Silvio_Bauer4">
-                    <i class="fa fa-xing"></i>
-                </a>
-                <a target="_blank" href="https://github.com/silvb">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a target="_blank" href="https://twitter.com/silvbauer">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a target="_blank" href="http://codepen.io/silvb/">
-                    <i class="fa fa-codepen"></i>
-                </a>
-            </div>
-        </div>
+    <div class="footer">
+        <a target="_blank" href="https://www.xing.com/profile/Silvio_Bauer4">
+            <i class="fa fa-xing"></i>
+        </a>
+        <a target="_blank" href="https://github.com/silvb">
+            <i class="fa fa-github"></i>
+        </a>
+        <a target="_blank" href="https://twitter.com/silvbauer">
+            <i class="fa fa-twitter"></i>
+        </a>
+        <a target="_blank" href="http://codepen.io/silvb/">
+            <i class="fa fa-codepen"></i>
+        </a>
+    </div>
+</div>
         
-        <script>
-            const caret = document.querySelector('.caret');
-            setInterval(() => {
-                caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
-            }, 800);
-        </script>
-
-    </body>
+<script type="text/javascript">
+    const caret = document.querySelector('.caret');
+    setInterval(() => {
+        caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
+    }, 800);
+</script>
+</body>
 </html>
