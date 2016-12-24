@@ -80,8 +80,8 @@
 </div>
         
 <script type="text/javascript">
-    const caret = document.querySelector('.caret');
-    setInterval(() => {
+    var caret = document.querySelector('.caret');
+    setInterval(function() {
         caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
     }, 800);
 </script>
