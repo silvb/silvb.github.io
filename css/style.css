@@ -26,7 +26,7 @@ body {
     max-width: 100%;
     padding: 15% 10%;
 
-    background: #1D1D1D;
+    background: #0C0C0C;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 auto;
         -ms-flex: 1 0 auto;
@@ -62,7 +62,7 @@ body {
 
     padding: 1rem 10rem;
 
-    background: #1D1D1D;
+    background: #0C0C0C;
 }
 
 ul {
@@ -130,20 +130,20 @@ li {
 }
 
 .icon {
-    width: 32px;
-    font-size: 32px!important;
-    padding-right: 10px;
+    width: 1.8rem;
+    font-size: 1.8rem!important;
+    padding-right: 1rem;
 }
 
 .highlight {
-    color: #F92672;
+    color: #ff6099;
 }
 
 
 a {
     text-decoration: none;
     color: darkslategray;
-    border-bottom: 2px solid #F92672;
+    border-bottom: 1px dotted #ff6099;
     white-space: nowrap;
     
     -webkit-transition: all 0.3s ease;
@@ -168,7 +168,7 @@ a {
 }
 
 .footer > a:hover > .fa {
-    color: #F92672;
+    color: #ff6099;
 }
 
 @media only screen
