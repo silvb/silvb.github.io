@@ -78,13 +78,13 @@ body {
 
 .header {
     max-width: 100%;
-    padding: 15% 10%;
+    padding: 15vh 10%;
 
     background: #232323;
     -webkit-box-flex: 1;
-    -webkit-flex: 1 0 20%;
-        -ms-flex: 1 0 20%;
-            flex: 1 0 20%;
+    -webkit-flex: 1 0 20vh;
+        -ms-flex: 1 0 20vh;
+            flex: 1 0 20vh;
 }
 
 .main {
