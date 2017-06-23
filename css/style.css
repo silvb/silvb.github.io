@@ -79,12 +79,18 @@ body {
 .header {
     max-width: 100%;
     padding: 15vh 10%;
+    color: #51b7e7;
 
-    background: #232323;
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 20vh;
         -ms-flex: 1 0 20vh;
             flex: 1 0 20vh;
+}
+
+.header,
+.footer {
+    background: radial-gradient(circle, #4F3A4B 10%, rgba(0, 0, 0, 0.5) 10%), radial-gradient(circle, rgba(79, 58, 75, 0.7), #4F3A4B 50%) 5px 5px;
+    background-size: 5px 5px;
 }
 
 .main {
@@ -93,9 +99,8 @@ body {
             flex: 1 0 auto;
     padding: 10% 15%;
     font-size: 18px;
-    background: #131313;
-    overflow-y: scroll;
-
+    line-height: 26px;
+    background: #212121;
 }
 
 .footer {
@@ -115,13 +120,12 @@ body {
         -ms-flex-pack: center;
         justify-content: center;
 
-    background: #232323;
     padding: 30px 8%;
 }
 
 ul {
     list-style: none;
-    padding: 0 0 0 10%;
+    padding-left: 10%;
     
     display: -webkit-box;
     
@@ -141,10 +145,6 @@ li {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
 }
 
 .header > h1 {
@@ -169,8 +169,8 @@ li {
     left: -10px;
     bottom: -3px;
     background: #ECD018;
-    -webkit-transition: color 0.2s;
-    transition: color 0.2s;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.2s;
 }
 
 @media (max-width: 600px) {
@@ -194,7 +194,7 @@ li {
 .icon {
     width: 22px;
     font-size: 22px!important;
-    padding-right: 12px;
+    margin-right: 18px;
 }
 
 .highlight {
@@ -204,7 +204,8 @@ li {
 
 a {
     text-decoration: none;
-    color: #66D9EF;
+    color: #51b7e7;
+    position: relative;
     
     white-space: nowrap;
     
@@ -212,8 +213,19 @@ a {
             transition: all 0.2s;
 }
 
-.main a:hover {
-    color: #ff6099;
+.main a::after {
+    content: ' ';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background: #ff6099;
+    transition: width 0.2s;
+}
+
+.main a:hover::after {
+        width: 100%;
 }
 
 .footer > a {
@@ -223,11 +235,11 @@ a {
 }
 
 .footer > a > .fa {
-    color: #66D9EF;
+    color: #51b7e7;
     font-size: 36px;
     
-    -webkit-transition: all 0.2s;
-            transition: all 0.2s;
+    -webkit-transition: color 0.5s;
+            transition: color 0.5s;
 }
 
 .footer > a:hover > .fa {
