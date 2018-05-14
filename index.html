@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -9,93 +10,103 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400%7CSource+Sans+Pro:200,400" type="text/css">
 </head>
+
 <body>
 
-<div class="container">
-    <div class="header">
+    <div class="container">
+        <div class="header">
 
-        <h1>
-            <span>Hi, I'm Silvio Bauer</span>
-            <div class="caret"></div>
-        </h1>
-        <h2>
-            I'm a <span class="highlight">frontend engineer</span> living in Hamburg, Germany.
-        </h2>
+            <h1>
+                <span>Hi, I'm Silvio Bauer</span>
+                <div class="caret"></div>
+            </h1>
+            <h2>
+                I'm a
+                <span class="highlight">frontend engineer</span> living in Hamburg, Germany.
+            </h2>
 
+        </div>
+
+        <div class="main">
+
+            Here's what I like:
+
+            <ul>
+                <li>
+                    <i class="fa fa-code icon highlight"></i>
+                    <span>
+                        Coding with JavaScript, currently at
+                        <a target="_blank" href="https://www.xing.com/">XING</a>
+                    </span>
+                </li>
+                <li>
+                    <span class="icon">💪</span>
+                    <span>
+                        Strength training, which I blog about at
+                        <a target="_blank" href="http://neatstrength.com/">neatstrength.com</a>
+                    </span>
+                </li>
+            </ul>
+
+
+            Projects:
+
+            <ul>
+                <li>
+                    <span>
+                        <a target="_blank" href="https://silvb.github.io/js30-clock">CSS + JS Clock</a>:
+                        <span class="description">Inspired by Wes Bos' tutorial from his
+                            <a target="_blank" href="https://javascript30.com/">#Javascript30</a> series</span>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <a target="_blank" href="https://silvb.github.io/js30-drumkit/">JS Drumkit</a>:
+                        <span class="description">Another small experiment with HTML5 audio based on a #Javascript30 episode</span>
+                    </span>
+                </li>
+            </ul>
+
+            If you want to get into the nitty-gritty details, email me at
+            <a target="_blank" href="mailto:mail@silviobauer.de">mail
+                <i class="fa fa-at"></i>silviobauer.de</a>.
+
+        </div>
+
+        <div class="footer">
+            <a target="_blank" href="https://www.xing.com/profile/Silvio_Bauer4">
+                <i class="fa fa-xing"></i>
+            </a>
+            <a target="_blank" href="https://github.com/silvb">
+                <i class="fa fa-github"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/silvbauer">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a target="_blank" href="http://codepen.io/silvb/">
+                <i class="fa fa-codepen"></i>
+            </a>
+        </div>
     </div>
 
-    <div class="main">
-       
-        Here's what I like:
+    <script type="text/javascript">
+        var caret = document.querySelector('.caret');
+        setInterval(function () {
+            caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
+        }, 800);
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        <ul>
-            <li>
-                <i class="fa fa-code icon highlight"></i>
-                <span>
-                    Coding with JavaScript, currently at <a target="_blank" href="https://www.jvm.com/en/work/">Jung von Matt</a>
-                </span>
-            </li>
-            <li>
-                <span class="icon">💪</span>
-                <span>
-                    Strength training, which I blog about at <a target="_blank" href="http://neatstrength.com/">neatstrength.com</a>
-                </span>
-            </li>
-        </ul>
+        ga('create', 'UA-91959414-2', 'auto');
+        ga('send', 'pageview');
 
-
-        Projects:
-        
-        <ul>
-            <li>
-                <span>
-                    <a target="_blank" href="https://silvb.github.io/js30-clock">CSS + JS Clock</a>:
-                    <span class="description">Inspired by Wes Bos' tutorial from his <a target="_blank" href="https://javascript30.com/">#Javascript30</a> series</span>
-                </span>
-            </li>
-            <li>
-                <span>
-                    <a target="_blank" href="https://silvb.github.io/js30-drumkit/">JS Drumkit</a>:
-                    <span class="description">Another small experiment with HTML5 audio based on a #Javascript30 episode</span>
-                </span>
-            </li>
-        </ul>
-
-        If you want to get into the nitty-gritty details, email me at <a target="_blank" href="mailto:mail@silviobauer.de">mail<i class="fa fa-at"></i>silviobauer.de</a>.
-
-    </div>
-
-    <div class="footer">
-        <a target="_blank" href="https://www.xing.com/profile/Silvio_Bauer4">
-            <i class="fa fa-xing"></i>
-        </a>
-        <a target="_blank" href="https://github.com/silvb">
-            <i class="fa fa-github"></i>
-        </a>
-        <a target="_blank" href="https://twitter.com/silvbauer">
-            <i class="fa fa-twitter"></i>
-        </a>
-        <a target="_blank" href="http://codepen.io/silvb/">
-            <i class="fa fa-codepen"></i>
-        </a>
-    </div>
-</div>
-        
-<script type="text/javascript">
-    var caret = document.querySelector('.caret');
-    setInterval(function() {
-        caret.style.opacity = caret.style.opacity === '0' ? '1' : '0';
-    }, 800);
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-91959414-2', 'auto');
-  ga('send', 'pageview');
-
-</script>
+    </script>
 </body>
+
 </html>
